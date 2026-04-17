@@ -12,10 +12,10 @@
     --text: #e8e8e8;
     --muted: #888;
     --dim: #555;
-    --cyan: #3bc6ff;
-    --blue: #5b8cff;
-    --purple: #9b3bff;
-    --grad: linear-gradient(135deg, #3bc6ff 0%, #5b8cff 50%, #9b3bff 100%);
+    --amber: #f5a623;
+    --amber-light: #ffc880;
+    
+    --grad: linear-gradient(180deg, #ffc880 0%, #f5a623 100%);
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
@@ -72,7 +72,7 @@
     text-decoration: none;
     background: linear-gradient(var(--bg-top), var(--bg-top)) padding-box,
                 var(--grad) border-box;
-    color: var(--cyan);
+    color: var(--amber);
     margin-top: 12px;
     font-family: ui-monospace, "SF Mono", Menlo, monospace;
   }
@@ -84,7 +84,7 @@
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 3px;
-    color: var(--cyan);
+    color: var(--amber);
     margin: 0 0 16px;
   }
   ul { padding-left: 20px; margin: 0; }
@@ -123,7 +123,7 @@
     font-size: 13px;
   }
   footer a { color: var(--muted); margin: 0 12px; text-decoration: none; }
-  footer a:hover { color: var(--cyan); }
+  footer a:hover { color: var(--amber); }
 </style>
 </head>
 <body>
@@ -132,22 +132,21 @@
     <svg class="icon-mark" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <linearGradient id="g" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stop-color="#3bc6ff"/>
-          <stop offset="55%" stop-color="#5b8cff"/>
-          <stop offset="100%" stop-color="#9b3bff"/>
+          <stop offset="0%" stop-color="#ffc880"/>
+          <stop offset="100%" stop-color="#f5a623"/>
         </linearGradient>
       </defs>
-      <g fill="none" stroke="url(#g)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+      <g fill="none" stroke="url(#g)" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
         <path d="M 432 248 L 592 248 L 660 540 L 364 540 Z"/>
-        <g stroke-width="14">
-          <line x1="478" y1="320" x2="546" y2="320"/>
-          <line x1="478" y1="370" x2="546" y2="370"/>
-          <line x1="478" y1="420" x2="546" y2="420"/>
-          <line x1="478" y1="470" x2="546" y2="470"/>
+        <g stroke-width="22">
+          <line x1="474" y1="320" x2="550" y2="320"/>
+          <line x1="474" y1="370" x2="550" y2="370"/>
+          <line x1="474" y1="420" x2="550" y2="420"/>
+          <line x1="474" y1="470" x2="550" y2="470"/>
         </g>
         <path d="M 512 500 L 660 260 L 700 286"/>
         <path d="M 304 540 L 720 540 L 720 690 L 512 838 L 304 690 Z"/>
-        <path d="M 360 690 L 410 660 L 440 720 L 470 600 L 500 760 L 530 580 L 560 760 L 590 620 L 620 700 L 660 670" stroke-width="20"/>
+        <path d="M 360 690 L 410 660 L 440 720 L 470 600 L 500 760 L 530 580 L 560 760 L 590 620 L 620 700 L 660 670" stroke-width="28"/>
       </g>
     </svg>
     <h1>Groove Pocket</h1>
