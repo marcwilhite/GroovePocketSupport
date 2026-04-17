@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Groove Pocket — Rhythm practice toolkit</title>
+<meta name="description" content="A focused rhythm practice toolkit for serious musicians. Metronome, polyrhythm engine, Euclidean patterns, 25 guided lessons. Free on iOS.">
+<style>
+  :root {
+    --bg-top: #1f2126;
+    --bg-bot: #15171b;
+    --text: #e8e8e8;
+    --muted: #888;
+    --dim: #555;
+    --cyan: #3bc6ff;
+    --blue: #5b8cff;
+    --purple: #9b3bff;
+    --grad: linear-gradient(135deg, #3bc6ff 0%, #5b8cff 50%, #9b3bff 100%);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bot) 100%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    min-height: 100vh;
+    line-height: 1.55;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 24px 120px;
+  }
+  .hero { text-align: center; margin-bottom: 64px; }
+  .icon-mark {
+    width: 128px; height: 128px;
+    margin: 0 auto 24px;
+    display: block;
+  }
+  h1 {
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    margin: 0 0 8px;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .tagline {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--muted);
+    margin: 0;
+  }
+  .lead {
+    font-size: 20px;
+    line-height: 1.45;
+    color: var(--text);
+    margin: 36px 0 24px;
+  }
+  .cta {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: linear-gradient(var(--bg-top), var(--bg-top)) padding-box,
+                var(--grad) border-box;
+    color: var(--cyan);
+    margin-top: 12px;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  .cta:hover { opacity: 0.85; }
+
+  section { margin-top: 64px; }
+  h2 {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--cyan);
+    margin: 0 0 16px;
+  }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin-bottom: 8px; }
+
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  @media (min-width: 600px) {
+    .features { grid-template-columns: 1fr 1fr; }
+  }
+  .feature {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .feature h3 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    background: var(--grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .feature p { margin: 0; color: var(--muted); font-size: 14px; }
+
+  footer {
+    margin-top: 96px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    text-align: center;
+    color: var(--dim);
+    font-size: 13px;
+  }
+  footer a { color: var(--muted); margin: 0 12px; text-decoration: none; }
+  footer a:hover { color: var(--cyan); }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <svg class="icon-mark" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#3bc6ff"/>
+          <stop offset="55%" stop-color="#5b8cff"/>
+          <stop offset="100%" stop-color="#9b3bff"/>
+        </linearGradient>
+      </defs>
+      <g fill="none" stroke="url(#g)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M 432 248 L 592 248 L 660 540 L 364 540 Z"/>
+        <g stroke-width="14">
+          <line x1="478" y1="320" x2="546" y2="320"/>
+          <line x1="478" y1="370" x2="546" y2="370"/>
+          <line x1="478" y1="420" x2="546" y2="420"/>
+          <line x1="478" y1="470" x2="546" y2="470"/>
+        </g>
+        <path d="M 512 500 L 660 260 L 700 286"/>
+        <path d="M 304 540 L 720 540 L 720 690 L 512 838 L 304 690 Z"/>
+        <path d="M 360 690 L 410 660 L 440 720 L 470 600 L 500 760 L 530 580 L 560 760 L 590 620 L 620 700 L 660 670" stroke-width="20"/>
+      </g>
+    </svg>
+    <h1>Groove Pocket</h1>
+    <p class="tagline">CLICK · POLY · EUCLID · TRAIN</p>
+    <p class="lead">A focused rhythm practice toolkit for drummers, percussionists, and producers. Three engines, 25 guided lessons, streak tracking. iCloud sync free for everyone.</p>
+    <a class="cta" href="#download">DOWNLOAD ON THE APP STORE</a>
+    <p style="color: var(--dim); font-size: 12px; margin-top: 16px; font-family: ui-monospace, monospace;">Coming soon to iOS</p>
+  </div>
+
+  <section>
+    <h2>FEATURES</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Click</h3>
+        <p>Metronome with accents, subdivisions, and time signatures from 2/4 to 12/8.</p>
+      </div>
+      <div class="feature">
+        <h3>Poly</h3>
+        <p>Polyrhythm engine. Layer 2-, 3-, 4-, even 5-voice rhythms with visual convergence rings.</p>
+      </div>
+      <div class="feature">
+        <h3>Euclid</h3>
+        <p>Euclidean rhythm generator. Tresillo, cinquillo, bossa nova clave, balkan odd meters.</p>
+      </div>
+      <div class="feature">
+        <h3>Train</h3>
+        <p>25 progressive lessons across 5 chapters from foundations to advanced polyrhythm.</p>
+      </div>
+      <div class="feature">
+        <h3>Practice log</h3>
+        <p>Track every session, watch your streak grow, earn trophies for consistency.</p>
+      </div>
+      <div class="feature">
+        <h3>iCloud sync</h3>
+        <p>Practice on iPhone, see progress on iPad. Badges and log sync automatically. Free.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>GROOVE POCKET +</h2>
+    <p style="color: var(--muted);">$4.99 one-time unlock. No subscriptions.</p>
+    <ul style="color: var(--muted);">
+      <li>4-voice Poly &amp; Euclid (full polyrhythm builder)</li>
+      <li>All time signatures (5/4, 7/8, 11/8, mixed)</li>
+      <li>Tempo ramp training (60 → 160 BPM)</li>
+      <li>Train Chapters 3 - 5</li>
+      <li>Unlimited practice log entries</li>
+      <li>CSV export</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="mailto:support@groovepocket.com">Email</a>
+    <p style="margin-top: 16px;">© 2026 Marc Wilhite</p>
+  </footer>
+</main>
+</body>
+</html>
